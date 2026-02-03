@@ -1,0 +1,91 @@
+<!doctype html>
+<html lang="es">
+
+<head>
+    <meta charset="utf-8" />
+    <meta name="viewport" content="width=device-width,initial-scale=1" />
+    <title>iPhone Catalog (Demo)</title>
+    <style>
+        body {
+            font-family: system-ui, -apple-system, Segoe UI, Roboto, Ubuntu, Arial;
+            margin: 40px;
+            line-height: 1.4
+        }
+
+        .grid {
+            display: grid;
+            grid-template-columns: repeat(auto-fit, minmax(240px, 1fr));
+            gap: 16px;
+            margin-top: 18px
+        }
+
+        .card {
+            border: 1px solid #e5e7eb;
+            border-radius: 14px;
+            padding: 16px;
+            text-decoration: none;
+            color: inherit
+        }
+
+        .card:hover {
+            border-color: #111827
+        }
+
+        .img {
+            width: 100%;
+            aspect-ratio: 16/10;
+            object-fit: contain;
+            background: #f9fafb;
+            border-radius: 12px
+        }
+
+        .muted {
+            color: #6b7280
+        }
+
+        .price {
+            font-size: 22px;
+            font-weight: 700;
+            margin-top: 6px
+        }
+
+        code {
+            background: #f3f4f6;
+            padding: 2px 6px;
+            border-radius: 8px
+        }
+    </style>
+</head>
+
+<body>
+    <h1>iPhone Catalog (Demo)</h1>
+    <p class="muted">
+        Sitio de prueba para scraping (sin restricciones). Cada producto incluye:
+        <code>title</code>, <code>price</code>, <code>image</code>.
+    </p>
+
+    <div class="grid">
+        <a class="card" href="./iphone-15.html">
+            <img class="img" src="./images/iphone15.jpg" alt="iPhone 15" />
+            <h2 data-testid="product-title">iPhone 15</h2>
+            <div class="price" data-testid="product-price">799,00 €</div>
+            <div class="muted" data-testid="product-model">iphone_15</div>
+        </a>
+
+        <a class="card" href="./iphone-16.html">
+            <img class="img" src="./images/iphone16.jpg" alt="iPhone 16" />
+            <h2 data-testid="product-title">iPhone 16</h2>
+            <div class="price" data-testid="product-price">899,00 €</div>
+            <div class="muted" data-testid="product-model">iphone_16</div>
+        </a>
+
+        <a class="card" href="./iphone-17.html">
+            <img class="img" src="./images/iphone17.jpg" alt="iPhone 17" />
+            <h2 data-testid="product-title">iPhone 17</h2>
+            <div class="price" data-testid="product-price">999,00 €</div>
+            <div class="muted" data-testid="product-model">iphone_17</div>
+        </a>
+    </div>
+</body>
+
+</html>

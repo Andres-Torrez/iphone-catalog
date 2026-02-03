@@ -1,0 +1,76 @@
+<!doctype html>
+<html lang="es">
+
+<head>
+    <meta charset="utf-8" />
+    <meta name="viewport" content="width=device-width,initial-scale=1" />
+    <title>iPhone 16 - Demo Product</title>
+    <style>
+        body {
+            font-family: system-ui, -apple-system, Segoe UI, Roboto, Ubuntu, Arial;
+            margin: 40px;
+            line-height: 1.4
+        }
+
+        .wrap {
+            max-width: 900px
+        }
+
+        .row {
+            display: grid;
+            grid-template-columns: 320px 1fr;
+            gap: 24px;
+            align-items: start
+        }
+
+        .img {
+            width: 100%;
+            aspect-ratio: 1/1;
+            object-fit: contain;
+            background: #f9fafb;
+            border-radius: 16px;
+            border: 1px solid #e5e7eb
+        }
+
+        .price {
+            font-size: 28px;
+            font-weight: 800
+        }
+
+        .meta {
+            color: #6b7280
+        }
+
+        a {
+            color: #111827
+        }
+    </style>
+</head>
+
+<body>
+    <div class="wrap">
+        <p><a href="./index.html">← Volver</a></p>
+
+        <div class="row">
+            <img class="img" data-testid="product-image" src="./images/iphone16.jpg" alt="iPhone 16" />
+
+            <div>
+                <h1 data-testid="product-title">iPhone 16 (128GB)</h1>
+                <p class="meta" data-testid="product-model">iphone_16</p>
+
+                <div class="price" data-testid="product-price">899,00 €</div>
+                <p class="meta" data-testid="product-currency">EUR</p>
+
+                <p class="meta">
+                    SKU: <span data-testid="product-sku">IPH16-128</span>
+                </p>
+
+                <p>
+                    Página demo diseñada para scraping: HTML estable y selectores predecibles.
+                </p>
+            </div>
+        </div>
+    </div>
+</body>
+
+</html>
